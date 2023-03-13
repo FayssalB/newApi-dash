@@ -8,6 +8,9 @@ const routes = require("./routes");
 
 server.use(express.json());
 
+const cors = require('cors');
+server.use(cors());
+
 server.listen(5602, () => {
     console.log("Serveur lancé et à l'écoute sur le port 5602");
     
