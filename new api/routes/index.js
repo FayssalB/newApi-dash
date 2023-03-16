@@ -4,12 +4,16 @@ const GamesController = require("../controllers/games");
 
 module.exports = server => {
 
-    server.get("/themes", (req,res) =>{
+    server.get("/themes", (req,res) => {
         ThemesController.getAll(req,res);
     });
 
-    server.get("/games", (req,res) =>{
+    server.get("/games", (req,res) => {
         GamesController.getThemes(req,res);
+    });
+
+    server.post("/games/:id/options", (req, res) => {
+        GamesController.addOptions(req, res);
     });
 
     server.post("/newgame", (req, res) => {
