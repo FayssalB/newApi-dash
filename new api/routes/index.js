@@ -8,7 +8,7 @@ module.exports = server => {
         ThemesController.getAll(req,res);
     });
 
-    server.get("/games", (req,res) => {
+    server.get("/games/:id", (req,res) => {
         GamesController.getThemes(req,res);
     });
 

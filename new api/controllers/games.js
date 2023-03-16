@@ -2,16 +2,14 @@ const GamesModel = require("../models/games");
 
 module.exports = {
     getThemes(req, res) {
-        GamesModel.find().select('_id').then(themes => {
+        GamesModel.find().select('themes').then(themes => {
             res.send(themes);
         }).catch(err => {
             console.log(err);
             res.status(500).send('Server Error');
         });
     }, 
-    createGame(req, res) {
-        GamesModel
-    },
+    
     getAll(req,res){
         GamesModel.find().then(games =>{
             res.send(games);
