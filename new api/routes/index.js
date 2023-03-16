@@ -1,6 +1,7 @@
 const ThemesController = require("../controllers/themes");
 const GamesController = require("../controllers/games");
-const GamesModel = require('../models/games');
+const ThemesModel = require("../models/themes")
+// const GamesModel = require('../models/games');
 
 module.exports = server => {
 
@@ -17,35 +18,14 @@ module.exports = server => {
     });
 
     server.post("/newgame", (req, res) => {
-        const { themes } = req.body;
-
-        const newGame = new GamesModel({themes});
-
-        newGame.save()
-            .then(game => {
-                res.send(game);
-            })
-            .catch(error => {
-                console.log(error);
-                res.status(500).send('Internal server error');
-            });
+        GamesController.createGame(req, res);
     });
 
     server.post('/games/:id/themes', (req, res) => {
-        const { id } = req.params;
-        const { themeId } = req.body;
-      
-        GamesModel.findByIdAndUpdate(id, { $push: { themes: themeId } })
-          .then(game => {
-            if (!game) {
-              res.status(404).send('Game not found');
-            } else {
-              res.send(game);
-            }
-          })
-          .catch(error => {
-            console.log(error);
-            res.status(500).send('Internal server error');
-          });
+        GamesController.handleThemes(req, res);
+      });  
+       
+      server.get("/start/:id", async (req, res) => {
+        ThemesController.getThemes(req,res);
       });
 }
