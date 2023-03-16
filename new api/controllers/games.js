@@ -2,7 +2,8 @@ const GamesModel = require("../models/games");
 
 module.exports = {
     getThemes(req, res) {
-        GamesModel.find().select('_id').then(themes => {
+      const { id } = req.params;
+        GamesModel.findById(id).select('themes').then(themes => {
             res.send(themes);
         }).catch(err => {
             console.log(err);
