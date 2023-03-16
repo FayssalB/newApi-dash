@@ -22,5 +22,15 @@ module.exports = server => {
 
     server.post('/games/:id/themes', (req, res) => {
         GamesController.handleThemes(req, res);
-      });   
+      });  
+    
+    server.get("/start/:id", async (req, res) => {
+    try {
+        const theme = await ThemesModel.findById(req.params.id);
+        res.send(theme);
+    } catch (error) {
+        console.log(error);
+        res.sendStatus(500);
+    }
+    });
 }
