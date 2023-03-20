@@ -1,7 +1,5 @@
 const ThemesController = require("../controllers/themes");
 const GamesController = require("../controllers/games");
-const ThemesModel = require("../models/themes")
-// const GamesModel = require('../models/games');
 
 module.exports = server => {
 
@@ -23,9 +21,9 @@ module.exports = server => {
 
     server.post('/games/:id/themes', (req, res) => {
         GamesController.handleThemes(req, res);
-      });  
+    });  
        
-      server.get("/start/:id", async (req, res) => {
+    server.get("/start/:id", async (req, res) => {
         ThemesController.getThemes(req,res);
-      });
+    });
 }
