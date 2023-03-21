@@ -1,9 +1,7 @@
-
--- NEW API --
-
 db.themes.insertOne({
    theme: "expressions",
    label: "Expressions",
+   picture:"expressions.jpg",
    element: ["Avoir un chat dans la gorge",
 "Avoir les yeux plus gros que le ventre",
 "Avoir un coup de foudre",
@@ -87,6 +85,7 @@ db.themes.insertOne({
 db.themes.insertOne({
    theme: "brands",
    label: "Marques",
+   picture:"brands.jpg",
    element: ["Air France",
 "Peugeot",
 "Renault",
@@ -177,6 +176,7 @@ db.themes.insertOne({
 db.themes.insertOne({
    theme: "histories",
    label: "Evénements historiques",
+   picture:"histories.jpg",
    element: ["Jésus-Christ",
 "Bouddha",
 "Alexandre le Grand",
@@ -243,6 +243,7 @@ db.themes.insertOne({
 db.themes.insertOne({
    theme: "sports",
    label: "Sports",
+   picture: "sports.jpg",
    element: ["Athlétisme",
 "Aviron",
 "Badminton",
@@ -327,6 +328,7 @@ db.themes.insertOne({
 db.themes.insertOne({
    theme: "athletes",
    label: "Athlètes",
+   picture: "athletes.jpg",
    element: ["Muhammad Ali",
 "Michael Jordan",
 "Pelé",
@@ -410,6 +412,7 @@ db.themes.insertOne({
 db.themes.insertOne({
    theme: "movies",
    label: "Films cultes",
+   picture: "movies.jpg",
    element: ["Bienvenue chez les Ch'tis",
 "Intouchables",
 "Les Visiteurs",
@@ -494,6 +497,7 @@ db.themes.insertOne({
 db.themes.insertOne({
    theme: "jobs",
    label: "Métiers",
+   picture: "jobs.jpg",
    element: ["Comptable",
 "Acupuncteur",
 "Architecte",
@@ -569,6 +573,7 @@ db.themes.insertOne({
 db.themes.insertOne({
    theme: "singers",
    label: "Chanteurs / Chanteuses",
+   picture:"singers.jpg",
    element: ["Edith Piaf",
 "The Beatles",
 "Jacques Brel",
@@ -646,6 +651,7 @@ db.themes.insertOne({
 db.themes.insertOne({
    theme: "actors",
    label: "Acteurs",
+   picture:"actors.jpg",
    element: [
 "Jean Reno",
 "Tom Hanks",
@@ -749,6 +755,7 @@ db.themes.insertOne({
 db.themes.insertOne({
    theme: "disneys",
    label: "Disney",
+   picture:"disneys.jpg",
    element: [
 "Mickey Mouse",
 "Timon and Pumbaa",
@@ -820,6 +827,7 @@ db.themes.insertOne({
 db.themes.insertOne({
    theme: "animals",
    label: "Animaux",
+   picture:"animals.jpg",
    element: [
 "Lion",
 "Tigre",
@@ -901,6 +909,94 @@ db.themes.insertOne({
 "Colombe",
 "Pigeon",
 "Rhinocéros"
+]
+})
+
+db.themes.insertOne({
+   theme: "characters",
+   label: "Personnages de films",
+   picture:"characters.jpg",
+   element: [
+    "Harry Potter",
+    "Hermione Granger",
+    "Ron Weasley",
+    "Severus Snape",
+    "Dumbledore",
+    "Voldemort",
+    "Luke Skywalker",
+    "Princess Leia",
+    "Han Solo",
+    "Darth Vader",
+    "Yoda",
+    "Chewbacca",
+    "Iron Man",
+    "Captain America",
+    "Thor",
+    "Black Widow",
+    "Hulk",
+    "Hawkeye",
+    "Batman",
+    "Superman",
+    "Wonder Woman",
+    "Joker",
+    "Catwoman",
+    "Poison Ivy",
+    "Spider-Man",
+    "Green Goblin",
+    "Doctor Octopus",
+    "Mary Jane Watson",
+    "Frodo Baggins",
+    "Gandalf",
+    "Aragorn",
+    "Legolas",
+    "Gimli",
+    "Galadriel",
+    "Gollum",
+    "Captain Jack Sparrow",
+    "Will Turner",
+    "Elizabeth Swann",
+    "Barbossa",
+    "Sauron",
+    "Marge Gunderson",
+    "Jeff Lebowski",
+    "Walter Sobchak",
+    "Anton Chigurh",
+    "Tony Montana",
+    "Michael Corleone",
+    "Vito Corleone",
+    "Donnie Brasco",
+    "Patrick Bateman",
+    "Hannibal Lecter",
+    "Indiana Jones",
+    "Elsa Schneider",
+    "Marion Ravenwood",
+    "Mutt Williams",
+    "James Bond",
+    "Q",
+    "M",
+    "Jaws",
+    "Blofeld",
+    "Le Chiffre",
+    "The Bride (Kill Bill)",
+    "Elle Driver",
+    "O-Ren Ishii",
+    "Forrest Gump",
+    "Lieutenant Dan",
+    "Jenny Curran",
+    "Darth Maul",
+    "Jabba the Hutt",
+    "Obi-Wan Kenobi",
+    "Padmé Amidala",
+    "Boba Fett",
+    "King Kong",
+    "Godzilla",
+    "Trinity (the Matrix)",
+    "Morpheus (the Matrix)",
+    "Maximus (Gladiator)",
+    "Catwoman",
+    "Neo (the Matrix)",
+    "The Joker",
+    "Hannibal Lecter"
 ]
 })
 
