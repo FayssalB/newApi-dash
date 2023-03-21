@@ -8,7 +8,13 @@ const GamesSchema = new Schema ({
         nbTeams : Number,
         nameTeams: Array,
         chrono: Number
-    }
+    },
+    points: [{
+        teamName : String,
+        scoreRound1 : Number,
+        scoreRound2 : Number,
+        scoreRound3 : Number
+    }]
 });
 ////1ere argument est la collectio dans la db
 const GamesModel = mongoose.model("games", GamesSchema);

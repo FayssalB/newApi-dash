@@ -26,4 +26,8 @@ module.exports = server => {
     server.get("/start/:id", async (req, res) => {
         ThemesController.getThemes(req,res);
     });
+
+    server.post('/games/:id/points', (req, res) => {
+        GamesController.addScores(req, res);
+    })
 }
