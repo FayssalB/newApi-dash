@@ -3,6 +3,7 @@
 
 db.themes.insertOne({
    theme: "expressions",
+   label: "Expressions",
    element: ["Avoir un chat dans la gorge",
 "Avoir les yeux plus gros que le ventre",
 "Avoir un coup de foudre",
@@ -85,6 +86,7 @@ db.themes.insertOne({
 
 db.themes.insertOne({
    theme: "brands",
+   label: "Marques",
    element: ["Air France",
 "Peugeot",
 "Renault",
@@ -174,6 +176,7 @@ db.themes.insertOne({
 
 db.themes.insertOne({
    theme: "histories",
+   label: "Evénements historiques",
    element: ["Jésus-Christ",
 "Bouddha",
 "Alexandre le Grand",
@@ -239,6 +242,7 @@ db.themes.insertOne({
 
 db.themes.insertOne({
    theme: "sports",
+   label: "Sports",
    element: ["Athlétisme",
 "Aviron",
 "Badminton",
@@ -322,6 +326,7 @@ db.themes.insertOne({
 
 db.themes.insertOne({
    theme: "athletes",
+   label: "Athlètes",
    element: ["Muhammad Ali",
 "Michael Jordan",
 "Pelé",
@@ -404,6 +409,7 @@ db.themes.insertOne({
 
 db.themes.insertOne({
    theme: "movies",
+   label: "Films cultes",
    element: ["Bienvenue chez les Ch'tis",
 "Intouchables",
 "Les Visiteurs",
@@ -487,6 +493,7 @@ db.themes.insertOne({
 
 db.themes.insertOne({
    theme: "jobs",
+   label: "Métiers",
    element: ["Comptable",
 "Acupuncteur",
 "Architecte",
@@ -561,6 +568,7 @@ db.themes.insertOne({
 
 db.themes.insertOne({
    theme: "singers",
+   label: "Chanteurs / Chanteuses",
    element: ["Edith Piaf",
 "The Beatles",
 "Jacques Brel",
@@ -637,6 +645,7 @@ db.themes.insertOne({
 
 db.themes.insertOne({
    theme: "actors",
+   label: "Acteurs",
    element: [
 "Jean Reno",
 "Tom Hanks",
@@ -739,6 +748,7 @@ db.themes.insertOne({
 
 db.themes.insertOne({
    theme: "disneys",
+   label: "Disney",
    element: [
 "Mickey Mouse",
 "Timon and Pumbaa",
@@ -809,6 +819,7 @@ db.themes.insertOne({
 
 db.themes.insertOne({
    theme: "animals",
+   label: "Animaux",
    element: [
 "Lion",
 "Tigre",
