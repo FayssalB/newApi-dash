@@ -1,7 +1,7 @@
 db.themes.insertOne({
    theme: "expressions",
    label: "Expressions",
-   picture:"expressions.jpg",
+   picture:"expressions.png",
    element: ["Avoir un chat dans la gorge",
 "Avoir les yeux plus gros que le ventre",
 "Avoir un coup de foudre",
@@ -85,7 +85,7 @@ db.themes.insertOne({
 db.themes.insertOne({
    theme: "brands",
    label: "Marques",
-   picture:"brands.jpg",
+   picture:"brands.png",
    element: ["Air France",
 "Peugeot",
 "Renault",
@@ -176,7 +176,7 @@ db.themes.insertOne({
 db.themes.insertOne({
    theme: "histories",
    label: "Evénements historiques",
-   picture:"histories.jpg",
+   picture:"histories.png",
    element: ["Jésus-Christ",
 "Bouddha",
 "Alexandre le Grand",
@@ -243,7 +243,7 @@ db.themes.insertOne({
 db.themes.insertOne({
    theme: "sports",
    label: "Sports",
-   picture: "sports.jpg",
+   picture: "sports.png",
    element: ["Athlétisme",
 "Aviron",
 "Badminton",
@@ -328,7 +328,7 @@ db.themes.insertOne({
 db.themes.insertOne({
    theme: "athletes",
    label: "Athlètes",
-   picture: "athletes.jpg",
+   picture: "athletes.png",
    element: ["Muhammad Ali",
 "Michael Jordan",
 "Pelé",
@@ -412,7 +412,7 @@ db.themes.insertOne({
 db.themes.insertOne({
    theme: "movies",
    label: "Films cultes",
-   picture: "movies.jpg",
+   picture: "movies.png",
    element: ["Bienvenue chez les Ch'tis",
 "Intouchables",
 "Les Visiteurs",
@@ -497,7 +497,7 @@ db.themes.insertOne({
 db.themes.insertOne({
    theme: "jobs",
    label: "Métiers",
-   picture: "jobs.jpg",
+   picture: "jobs.png",
    element: ["Comptable",
 "Acupuncteur",
 "Architecte",
@@ -573,7 +573,7 @@ db.themes.insertOne({
 db.themes.insertOne({
    theme: "singers",
    label: "Chanteurs / Chanteuses",
-   picture:"singers.jpg",
+   picture:"singers.png",
    element: ["Edith Piaf",
 "The Beatles",
 "Jacques Brel",
@@ -651,7 +651,7 @@ db.themes.insertOne({
 db.themes.insertOne({
    theme: "actors",
    label: "Acteurs",
-   picture:"actors.jpg",
+   picture:"actors.png",
    element: [
 "Jean Reno",
 "Tom Hanks",
@@ -755,7 +755,7 @@ db.themes.insertOne({
 db.themes.insertOne({
    theme: "disneys",
    label: "Disney",
-   picture:"disneys.jpg",
+   picture:"disneys.png",
    element: [
 "Mickey Mouse",
 "Timon and Pumbaa",
@@ -827,7 +827,7 @@ db.themes.insertOne({
 db.themes.insertOne({
    theme: "animals",
    label: "Animaux",
-   picture:"animals.jpg",
+   picture:"animals.png",
    element: [
 "Lion",
 "Tigre",
@@ -915,7 +915,7 @@ db.themes.insertOne({
 db.themes.insertOne({
    theme: "characters",
    label: "Personnages de films",
-   picture:"characters.jpg",
+   picture:"characters.png",
    element: [
     "Harry Potter",
     "Hermione Granger",

@@ -7,6 +7,10 @@ module.exports = server => {
         ThemesController.getAll(req,res);
     });
 
+    server.get("/start/:id", async (req, res) => {
+        ThemesController.getThemes(req,res);
+    });
+
     server.get("/games/:id", (req,res) => {
         GamesController.getThemes(req,res);
     });
@@ -22,12 +26,12 @@ module.exports = server => {
     server.post('/games/:id/themes', (req, res) => {
         GamesController.handleThemes(req, res);
     });  
-       
-    server.get("/start/:id", async (req, res) => {
-        ThemesController.getThemes(req,res);
-    });
 
     server.post('/games/:id/points', (req, res) => {
         GamesController.addScores(req, res);
     })
+    server.get('/games/:id/points', (req, res) => {
+        GamesController.getScores(req, res);
+    })
+
 }
