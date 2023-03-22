@@ -83,16 +83,18 @@ module.exports = {
             res.status(500).send('Internal server error');
           });
     },
-    addScores(req, res){
-        if (req.body.points) {
-
-        const { teamName, scoreRound1, scoreRound2, scoreRound3 } = req.body.points;
-        
-        const newScore = { teamName, scoreRound1, scoreRound2, scoreRound3 };
-
+  
+    addScores(req, res) {
+      if (req.body.partie) {
+        const { partie } = req.body;
+    
         const { id } = req.params;
-        
-        GamesModel.findByIdAndUpdate(id, {$push: { points: newScore }}, { new: true })
+    
+        GamesModel.findByIdAndUpdate(
+          id,
+          { $push: { points: partie  } },
+          { new: true }
+        )
           .then(game => {
             if (!game) {
               res.status(404).send('Game not found');
@@ -105,11 +107,17 @@ module.exports = {
             console.log(error);
             res.status(500).send('Internal server error');
           });
-        } else {
-
+      } else {
         res.status(400).send('Bad request: points not provided');
-        }
-    
-        
+      }
+    },
+    getScores(req, res) {
+      const { id } = req.params;
+        GamesModel.findById(id).then(points => {
+            res.send(points);
+        }).catch(err => {
+            console.log(err);
+            res.status(500).send('Server Error');
+        });
     }
 }
